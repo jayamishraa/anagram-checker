@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Anagram Checker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Anagram Checker</h1>
+
+        <label class="switch">
+            <input type="checkbox" 
+                id="modeToggle" 
+                onclick="toggleMode()"
+            >
+            <span class="slider round"></span>
+        </label>
+
+        <label for="word1">Word 1</label>
+        <input type="text" 
+            id="word1" 
+            onClick="handleClear()" 
+            placeholder="Enter the first word..."
+        >
+        <label for="word2">Word 2</label>
+        <input type="text" 
+            id="word2" 
+            onClick="handleClear()" 
+            placeholder="Enter the second word..."
+        >
+        <button onClick="checkAnagram()">Check</button>
+        <span id="answer"></span>
+    </div>
+</body>
+</html>
